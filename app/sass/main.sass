@@ -1,0 +1,242 @@
+@import "vars"
+// START NORMALIZE
+*
+	margin: 0
+	font-weight: normal
+ul
+	margin: 0
+	padding: 0
+// END NORMALIZE
+
+// START DEFAULT STYLE
+body
+	color: #fff
+	font-family: 'OpenSans-Regular'
+	font-size: 14px
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 15px
+
+.clearfix:after
+	content: ""
+	display: table
+	clear: both
+
+.slider-padding
+	padding: 0 30px
+.align-rigth
+	text-align: right
+// END DEFAULT STYLE
+
+// START HEADER
+header
+	box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15)
+	padding: 15px 0
+	background-color: white
+	position: fixed
+	top: 0
+	z-index: 100
+	width: 100%
+	.slick
+		display: none
+	.menu
+		text-align: center
+		padding-top: 28px
+		padding-bottom: 19px
+		ul
+			list-style: none
+			.nav-center
+				width: 30%
+			li
+				display: inline-block
+				&:nth-child(5)
+					padding-left: 0
+				& + li
+					padding-left: 2.5%
+				a
+					display: inline-block
+					position: relative
+					padding-bottom: 5px
+					text-decoration: none
+					vertical-align: middle
+					font-family: 'OpenSans-SemiBold'
+					font-size: 14px
+					color: #555
+					line-height: 1em
+					&:after
+						width: 0px
+						height: 1px
+						background: $blue_color
+						position: absolute
+						left: 50%
+						bottom: 0
+						content: ""
+						margin-left: 0
+						transition: all 0.3s ease
+					&:hover
+						color: $blue_color
+					&:hover:after
+						width: 30px
+						margin-left: -15px
+			.logo
+				position: relative
+				left: 0
+				top: 0
+				display: inline-block
+.fix
+	height: 97px
+// END HEADER
+
+// START SLIDER
+
+
+.yoga
+	background: url(../img/slider-bg.jpg) no-repeat top center
+	background-size: cover
+
+	.slider-info
+		margin: 0 -15px
+		padding: 100px 0
+		width: 100%
+		.slider-form
+			width: 50%
+			float: left
+			padding: 0 15px
+			box-sizing: border-box
+			form
+				width: 230px
+				background-color: #fff
+				border-radius: 20px
+				padding: 35px
+				float: right
+				box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15)
+
+				.text-form
+					font-family: $semi_bold
+					font-size: 26px
+					color: $blue_color
+					padding-bottom: 30px
+				input, select
+					font-family: $regular
+					font-size: 14px
+					color: #888
+					width: 100%
+					height: 50px
+					margin-bottom: 15px
+					padding-left: 10px
+					border-radius: 7px
+					background-color: #f2f2f2
+					border: none
+					box-sizing: border-box
+
+				.btn_form
+					font-family: $bold
+					font-size: 16px
+					color: #fff
+					width: 170px
+					height: 50px
+					background-color: $blue_color
+					margin-top: 14px
+					border-radius: 7px
+					border: none
+					&:hover
+						box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15)
+						cursor: pointer
+		.slider-text
+			float: left
+			width: 50%
+			padding: 0 15px
+			box-sizing: border-box
+			h2
+				font-family: $bold
+				font-size: 48px
+				max-width: 480px
+				text-transform: uppercase
+				color: #fff
+				line-height: 1.5em
+				padding: 60px 0 40px
+			p
+				font-family: $freestyle
+				font-size: 40px
+				max-width: 275px
+				line-height: 1.2em
+// END SLIDER
+
+// START OUR CLASSES
+
+.our-classes
+	background-color: #fff
+	text-align: center
+	color: #777
+	padding: 120px 0
+	h3
+		@extend %title
+	h4
+		font-family: $freestyle
+		font-size: 40px
+		padding: 10px 0 40px
+	.classes-item
+		.item
+			border-radius: 8px
+			box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1)
+			float: left
+			width: 570px
+			height: 300px
+			margin-top: 25px
+			&:nth-child(even)
+				margin-left: 30px
+			img
+				float: left
+				padding-right: 30px
+				border-radius: 8px
+			.classes-text
+				padding: 32px 30px
+				text-align: left
+				.text-1
+					font-family: $bold
+					font-size: 20px
+					line-height: 2.25em
+					text-transform: uppercase
+					padding-bottom: 15px
+				.text-2
+					color: #555
+					padding-bottom: 15px
+					line-height: 1.7em
+				.text-3
+					line-height: 1.5em
+					color: #999
+// END OUR CLASSES
+
+// START GALLERY
+.gallery
+	background-color: #222
+	padding: 100px 0
+
+// END GALLERY
+
+// START ABOUT US
+.about-us
+	.about-us-info
+		padding: 120px 0
+		.about-text
+			float: left
+			max-width: 50%
+			h3
+				padding: 15px 0
+				@extend %title
+			.text-2
+				color: #555
+				padding-bottom: 15px
+				line-height: 1.7em
+				max-width: 470px
+		.about-slider
+			float: right
+			max-width: 570px
+// END ABOUT US
+
+
+@import "media"
+
+

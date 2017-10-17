@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'FreestyleScript-Regular';
+	src: url('../fonts/FreestyleScript-Regular/FreestyleScript-Regular.eot');
+	src: url('../fonts/FreestyleScript-Regular/FreestyleScript-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/FreestyleScript-Regular/FreestyleScript-Regular.woff') format('woff'),
+		 url('../fonts/FreestyleScript-Regular/FreestyleScript-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight:  normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot');
+	src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'),
+		 url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight:  normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Italic';
+	src: url('../fonts/OpenSans-Italic/OpenSans-Italic.eot');
+	src: url('../fonts/OpenSans-Italic/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Italic/OpenSans-Italic.woff') format('woff'),
+		 url('../fonts/OpenSans-Italic/OpenSans-Italic.ttf') format('truetype');
+	font-style: normal;
+	font-weight:  normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Regular/OpenSans-Regular.woff') format('woff'),
+		 url('../fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight:  normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-SemiBold';
+	src: url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot');
+	src: url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff') format('woff'),
+		 url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight:  normal;
+}
