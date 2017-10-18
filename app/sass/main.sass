@@ -210,9 +210,60 @@ header
 // END OUR CLASSES
 
 // START GALLERY
-.gallery
-	background-color: #222
-	padding: 100px 0
+.yoga-gallery
+	.popup-gallery
+		margin: 100px 0
+		text-align: center
+		overflow: hidden
+		a
+			float: left
+			width: 25%
+			display: block
+			line-height: 0
+			position: relative
+			overflow: hidden
+			&:before
+				content: ''
+				background: rgba(#5b6ceb, 0.8)
+				position: absolute
+				top: 0
+				left: 0
+				height: 100%
+				width: 100%
+				z-index: 2
+				transition: all 0.3s ease
+				transform: scale(0.9)
+				opacity: 0
+			&:after
+				content: '\f002 '
+				font-family: 'FontAwesome'
+				font-size: 25px
+				line-height: 57px
+				width: 57px
+				text-align: center
+				color: #5b6ceb
+				background: #fff
+				border-radius: 50%
+				position: absolute
+				z-index: 3
+				top: 50%
+				left: 50%
+				margin: -28px 0 0 -28px
+				transition: all 0.3s ease
+				transform: scale(1.1)
+				opacity: 0
+			&:hover
+				&:before,
+				&:after
+					transform: scale(1)
+					opacity: 1
+
+			img
+				max-width: 100%
+				width: 100%
+				height: auto
+				z-index: 1
+				position: relative
 
 // END GALLERY
 
@@ -235,6 +286,74 @@ header
 			float: right
 			max-width: 570px
 // END ABOUT US
+
+// START FEATURES
+.features
+	background: url(../img/features-bg.jpg) no-repeat top center
+	background-size: cover
+	.features-block
+		padding: 100px 0
+		text-align: center
+		overflow: hidden
+		.feature-item
+			height: 300px
+			max-width: 291px
+			display: block
+			float: left
+			.wrap-item
+				margin: 0 12.5px
+				.icon
+					padding: 25px 0
+					img
+				h4
+					font-family: $bold
+					font-size: 18px
+					padding-bottom: 12px
+					line-height: 1.5em
+				p
+					font-size: 16px
+					line-height: 1.7em
+// END FEATURES
+
+// START PRICE
+.price
+	background: url(../img/price-bg.png) no-repeat bottom right
+	height: 1170px
+	.price-info
+		.price-item
+// END PRICE
+
+// START FOOTER
+.footer
+	.top-footer
+		padding: 100px 0
+		background-color: #5b6ceb
+		h4
+			font-family: $bold
+			font-size: 18px
+			text-transform: uppercase
+		p
+			max-width: 470px
+			width: 50%
+			line-height: 1.5em
+			padding: 50px 0
+		.social-icon
+			ul
+				list-style-type: none
+				li
+					display: inline-block
+					a
+						color: #fff
+						font-size: 24px
+						padding-right: 15px
+	.bottom-footer
+		background-color: #5363d8
+		text-align: center
+		font-size: 16px
+		color: #b7bffc
+		line-height: 100px
+
+// END FOOTER
 
 
 @import "media"

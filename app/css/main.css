@@ -42,7 +42,8 @@ body {
 }
 
 header {
-  box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15);
   padding: 15px 0;
   background-color: white;
   position: fixed;
@@ -102,6 +103,8 @@ header .menu ul li a:after {
   bottom: 0;
   content: "";
   margin-left: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -127,7 +130,8 @@ header .menu ul .logo {
 
 .yoga {
   background: url(../img/slider-bg.jpg) no-repeat top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 .yoga .slider-info {
@@ -140,16 +144,19 @@ header .menu ul .logo {
   width: 50%;
   float: left;
   padding: 0 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .yoga .slider-info .slider-form form {
   width: 230px;
   background-color: #fff;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   padding: 35px;
   float: right;
-  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 .yoga .slider-info .slider-form form .text-form {
@@ -167,10 +174,12 @@ header .menu ul .logo {
   height: 50px;
   margin-bottom: 15px;
   padding-left: 10px;
-  border-radius: 7px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
   background-color: #f2f2f2;
   border: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .yoga .slider-info .slider-form form .btn_form {
@@ -181,12 +190,14 @@ header .menu ul .logo {
   height: 50px;
   background-color: #5363db;
   margin-top: 14px;
-  border-radius: 7px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
   border: none;
 }
 
 .yoga .slider-info .slider-form form .btn_form:hover {
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -194,7 +205,8 @@ header .menu ul .logo {
   float: left;
   width: 50%;
   padding: 0 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .yoga .slider-info .slider-text h2 {
@@ -228,8 +240,10 @@ header .menu ul .logo {
 }
 
 .our-classes .classes-item .item {
-  border-radius: 8px;
-  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
   float: left;
   width: 570px;
   height: 300px;
@@ -243,7 +257,8 @@ header .menu ul .logo {
 .our-classes .classes-item .item img {
   float: left;
   padding-right: 30px;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
 }
 
 .our-classes .classes-item .item .classes-text {
@@ -270,9 +285,77 @@ header .menu ul .logo {
   color: #999;
 }
 
-.gallery {
-  background-color: #222;
-  padding: 100px 0;
+.yoga-gallery .popup-gallery {
+  margin: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.yoga-gallery .popup-gallery a {
+  float: left;
+  width: 25%;
+  display: block;
+  line-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.yoga-gallery .popup-gallery a:before {
+  content: '';
+  background: rgba(91, 108, 235, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0;
+}
+
+.yoga-gallery .popup-gallery a:after {
+  content: '\f002 ';
+  font-family: 'FontAwesome';
+  font-size: 25px;
+  line-height: 57px;
+  width: 57px;
+  text-align: center;
+  color: #5b6ceb;
+  background: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  margin: -28px 0 0 -28px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0;
+}
+
+.yoga-gallery .popup-gallery a:hover:before, .yoga-gallery .popup-gallery a:hover:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.yoga-gallery .popup-gallery a img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
 }
 
 .about-us .about-us-info {
@@ -298,6 +381,90 @@ header .menu ul .logo {
 .about-us .about-us-info .about-slider {
   float: right;
   max-width: 570px;
+}
+
+.features {
+  background: url(../img/features-bg.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.features .features-block {
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.features .features-block .feature-item {
+  height: 300px;
+  max-width: 291px;
+  display: block;
+  float: left;
+}
+
+.features .features-block .feature-item .wrap-item {
+  margin: 0 12.5px;
+}
+
+.features .features-block .feature-item .wrap-item .icon {
+  padding: 25px 0;
+}
+
+.features .features-block .feature-item .wrap-item h4 {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 18px;
+  padding-bottom: 12px;
+  line-height: 1.5em;
+}
+
+.features .features-block .feature-item .wrap-item p {
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+.price {
+  background: url(../img/price-bg.png) no-repeat bottom right;
+  height: 1170px;
+}
+
+.footer .top-footer {
+  padding: 100px 0;
+  background-color: #5b6ceb;
+}
+
+.footer .top-footer h4 {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer .top-footer p {
+  max-width: 470px;
+  width: 50%;
+  line-height: 1.5em;
+  padding: 50px 0;
+}
+
+.footer .top-footer .social-icon ul {
+  list-style-type: none;
+}
+
+.footer .top-footer .social-icon ul li {
+  display: inline-block;
+}
+
+.footer .top-footer .social-icon ul li a {
+  color: #fff;
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+.footer .bottom-footer {
+  background-color: #5363d8;
+  text-align: center;
+  font-size: 16px;
+  color: #b7bffc;
+  line-height: 100px;
 }
 
 .our-classes h3, .about-us .about-us-info .about-text h3 {
@@ -332,6 +499,9 @@ header .menu ul .logo {
     float: none;
     margin: 0 auto;
     margin-top: 30px;
+  }
+  .features .features-block .feature-item {
+    max-width: 33.333%;
   }
 }
 
@@ -377,6 +547,8 @@ header .menu ul .logo {
   }
   .slicknav_nav a {
     display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   main .yoga .slider-info {
@@ -428,6 +600,12 @@ header .menu ul .logo {
   .our-classes .classes-item .item .text-1 {
     text-align: center;
   }
+  .features .features-block {
+    padding: 50px 0;
+  }
+  .features .features-block .feature-item {
+    max-width: 50%;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -444,6 +622,9 @@ header .menu ul .logo {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /**/
+  .features .features-block .feature-item {
+    max-width: 100%;
+  }
 }
 
 /* Custom, iPhone Retina */
