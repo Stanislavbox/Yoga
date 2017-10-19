@@ -38,9 +38,9 @@
 								Trial Class
 							</div>
 
-							<input id="name" name="name" type="text" placeholder="Enter your name" required="">
+							<input id="name" name="name" type="text" placeholder="Enter your name" autofocus required="">
 					
-							<input id="phone" name="phone" type="tel" placeholder="Enter your phone" required="">
+							<input id="phone" name="phone" type="tel" placeholder="Enter your phone" required="" pattern="\+8\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
 
 							<select name="" id="" placeholder="Chose your class">
 								<option value="">Yoga For Health</option>
@@ -146,7 +146,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="features">
+	<section class="features" id="elements">
 		<div class="container">
 			<div class="features-block">
 				<div class="feature-item">
@@ -208,21 +208,140 @@
 			</div>
 		</div>
 	</section>
-	<section class="price">
+	<section class="price" id="reservation">
 		<div class="container">
-			<div class="price-info">
+			<div class="price-info clearfix">
 				<div class="price-item">
-					<div class="price-1"></div>
-					<div class="price-2"></div>
-					<button></button>
+					<div class="item-head">
+						<p> <span class="dollar">$</span><span> 49</span> / month</p>
+					</div>
+					<ul>
+						<li class="line">ENTRY DATE: MON – FRI</li>
+						<li class="line">ENTRY TIME: 8A.M – 8P.M</li>
+						<li>NUTRITION ADVICER: NO</li>
+					</ul>
+					<button>Buy now</button>
+				</div>
+				<div class="price-item middle">
+					<div class="item-head">
+						<p> <span class="dollar">$</span><span> 69</span> / month</p>
+					</div>
+					<ul>
+						<li class="line">ENTRY DATE: MON – FRI</li>
+						<li class="line">ENTRY TIME: 8A.M – 8P.M</li>
+						<li>NUTRITION ADVICER: YES</li>
+					</ul>
+					<button>Buy now</button>
+				</div>
+				<div class="price-item">
+					<div class="item-head">
+						<p> <span class="dollar">$</span><span> 99</span> / month</p>
+					</div>
+					<ul>
+						<li class="line">ENTRY DATE: MON – FRI</li>
+						<li class="line">ENTRY TIME: 8A.M – 8P.M</li>
+						<li>NUTRITION ADVICER: YES</li>
+					</ul>
+					<button>Buy now</button>
 				</div>
 			</div>
-			<div class="bloquotes">
-				
+			<div class="trainer-slider" id="blog">
+				<div class="trainer clearfix">
+					<div class="photo">
+						<img src="img/photo-1.jpg" alt="">
+					</div>
+					<div class="bloquote">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+						</blockquote>
+						<div class="title">
+							<p>Trainer</p>
+							<h4 class="trainer-name">Laura Shepard</h4>
+						</div>
+						
+					</div>
+					<div class="trainer-next">
+						<div class="mini-photo">
+							<img src="img/photo-mini-1.jpg" alt=""></div>
+						<div class="trainer-name">
+							<h4>Sara Less</h4>
+							<p>Trainer</p>
+						</div>
+					</div>
+				</div>
+				<div class="trainer clearfix">
+					<div class="photo">
+						<img src="img/photo-1.jpg" alt="">
+					</div>
+					<div class="bloquote">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+						</blockquote>
+						<div class="title">
+							<p>Trainer</p>
+							<h4 class="trainer-name">Sara Less</h4>
+						</div>
+						
+					</div>
+					<div class="trainer-next">
+						<div class="mini-photo">
+							<img src="img/photo-mini-1.jpg" alt=""></div>
+						<div class="trainer-name">
+							<h4>Mary Kiss</h4>
+							<p>Trainer</p>
+						</div>
+					</div>
+				</div>
+				<div class="trainer clearfix">
+					<div class="photo">
+						<img src="img/photo-1.jpg" alt="">
+					</div>
+					<div class="bloquote">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+						</blockquote>
+						<div class="title">
+							<p>Trainer</p>
+							<h4 class="trainer-name">Mari Kiss</h4>
+						</div>
+						
+					</div>
+					<div class="trainer-next">
+						<div class="mini-photo">
+							<img src="img/photo-mini-1.jpg" alt=""></div>
+						<div class="trainer-name">
+							<h4>Sara Taylor</h4>
+							<p>Trainer</p>
+						</div>
+					</div>
+				</div>
+				<div class="trainer clearfix">
+					<div class="photo">
+						<img src="img/photo-1.jpg" alt="">
+					</div>
+					<div class="bloquote">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+						</blockquote>
+						<div class="title">
+							<p>Trainer</p>
+							<h4 class="trainer-name">Sara Taylor</h4>
+						</div>
+						
+					</div>
+					<div class="trainer-next">
+						<div class="mini-photo">
+							<img src="img/photo-mini-1.jpg" alt=""></div>
+						<div class="trainer-name">
+							<h4>Laura Shepard</h4>
+							<p>Trainer</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<footer class="footer">
+	<footer class="footer" id="shop">
 		<div class="top-footer">
 			<div class="container">
 				<div class="footer-about">

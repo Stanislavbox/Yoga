@@ -46,6 +46,13 @@ $( function() {
 
 	//bxSlider init
 	$('.slider').bxSlider({
+		pager: 'false'
+
+	});
+
+	$('.trainer-slider').bxSlider({
+		mode: 'fade',
+		pager: 'true'
 
 	});
 

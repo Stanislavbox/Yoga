@@ -134,13 +134,10 @@ header
 				.btn_form
 					font-family: $bold
 					font-size: 16px
-					color: #fff
-					width: 170px
-					height: 50px
-					background-color: $blue_color
 					margin-top: 14px
 					border-radius: 7px
-					border: none
+					@extend %btn
+
 					&:hover
 						box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15)
 						cursor: pointer
@@ -285,6 +282,8 @@ header
 		.about-slider
 			float: right
 			max-width: 570px
+			.bx-wrapper .bx-pager
+				display: none
 // END ABOUT US
 
 // START FEATURES
@@ -318,9 +317,159 @@ header
 // START PRICE
 .price
 	background: url(../img/price-bg.png) no-repeat bottom right
-	height: 1170px
+	padding: 100px 0
 	.price-info
+		text-align: center
 		.price-item
+			display: inline-block
+			width: 370px
+			height: 494px
+			border-radius: 10px
+			box-shadow: 6px 6px 50px 0px rgba(0, 0, 0, 0.1)
+			text-align: center
+			background-color: #fff
+			margin-bottom: 50px
+			
+			.item-head
+				font-family: $bold
+				font-size: 18px
+				background-color: #5b6ceb
+				border-top-right-radius: 10px
+				border-top-left-radius: 10px
+				height: 150px
+				p
+					line-height: 150px
+					text-transform: uppercase
+					.dollar
+						font-size: 32px
+						vertical-align: top
+					span
+						font-size: 68px
+			ul
+				list-style-type: none
+				padding: 45px 0 45px 70px
+				li
+					font-size: 18px
+					color: #555
+					text-transform: uppercase
+					text-align: left
+					position: relative
+					&:nth-child(2)
+						padding-top: 20px
+					&:nth-child(3)
+						padding-top: 20px
+				.line
+					padding-bottom: 20px
+					&:after
+						width: 99px
+						height: 1px
+						background: #d7d7d7
+						position: absolute
+						right: 50%
+						bottom: 0
+						content: ""
+			button
+				font-family: $semi_bold
+				font-size: 18px
+				border-radius: 20px
+				@extend %btn
+				
+				&:hover
+					box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15)
+					cursor: pointer
+		.middle
+			margin-left: 25px
+			margin-right: 25px
+	
+	.trainer
+		background-color: #FFF
+		box-shadow: 6px 6px 50px 0px rgba(0, 0, 0, 0.1)
+		height: 250px
+		.photo
+			float: left
+			width: 18%
+			padding-top: 40px
+			padding-left: 60px
+			margin-right: 40px
+			position: relative
+			&:after
+				background-color: #d7d7d7
+				height: 75px
+				width: 2px
+				bottom: 12px
+				right: 0
+				position: absolute
+				content: ''
+			img
+				border: 2px solid #d7d7d7
+				border-radius: 50%
+				padding: 8px
+		.bloquote
+			height: 125px
+			padding-top: 45px
+			display: inline-block
+			blockquote
+				font-family: $italic
+				color: #555
+				max-width: 670px
+				display: inline-block
+				position: relative
+				&:before
+					position: absolute
+					top: 0
+					left: -50px
+					content: '\f10d'
+					font-family: 'FontAwesome'
+					font-size: 20px
+					color: #5b6ceb
+				&:after
+					position: absolute
+					bottom: 0
+					right: -50px
+					content: '\f10e'
+					font-family: 'FontAwesome'
+					font-size: 20px
+					color: #5b6ceb
+
+			.title
+				color: #777
+				padding-top: 35px
+		.trainer-name
+			font-family: $bold
+			font-size: 16px
+			color: #5b6ceb
+		.trainer-next
+			position: absolute
+			bottom: -37px
+			left: 30%
+			min-width: 170px
+			.mini-photo
+				float: left
+				img
+					border-radius: 50%
+					padding: 4px
+					border: 2px solid #d7d7d7
+					background-color: #fff
+
+			.trainer-name
+				float: left
+				padding: 14px
+				h4
+					font-family: $bold
+					color: #555
+				p
+					font-family: $regular
+					font-size: 12px
+					color: #777
+	.bx-wrapper .bx-controls-direction
+		a
+			top: 100%
+		.bx-prev
+			left: 23%
+		.bx-next 
+			right: 48%
+.price .bx-wrapper .bx-viewport
+	overflow: visible
 // END PRICE
 
 // START FOOTER
