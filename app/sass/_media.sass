@@ -3,6 +3,12 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.bx-wrapper .bx-pager
+		display: none
+	.price .bx-wrapper .bx-controls-direction .bx-next
+		right: 48%
 @media only screen and (max-width : 1220px)
 	/**/
 	.our-classes .classes-item .item
@@ -25,6 +31,8 @@
 			margin-top: 30px
 	.features .features-block .feature-item
 		max-width: 33.333%
+	.yoga-gallery .popup-gallery a
+		width: 33.333%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -39,6 +47,47 @@
 		display: block
 		margin-left: auto
 		margin-right: auto
+	.yoga-gallery .popup-gallery a
+		width: 50%
+	.price .trainer .photo
+		width: 100%
+		padding: 50px 0 0
+		float: none
+		text-align: center
+		margin: 0
+		&:after
+			display: none
+		img
+			display: inline-block
+	.price
+		.trainer
+			.bloquote
+				padding: 40px 30px 80px
+				blockquote
+					max-width: none
+					text-align: center
+					&:before
+						position: relative
+						padding-right: 10px
+						left: 0
+					&:after
+						right: 10px
+				.title
+					text-align: center
+			.trainer-next
+				left: 50%
+				transform: translateX(-50%)
+	.price .bx-wrapper .bx-controls-direction
+		.bx-prev
+			left: 30px
+		.bx-next
+			right: 30px
+		a
+			bottom: auto
+			top: 185px
+
+	.footer .top-footer .footer-contact ul
+		float: none
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
@@ -105,7 +154,52 @@
 		padding: 50px 0
 		.feature-item
 			max-width: 50%
+	.yoga-gallery .popup-gallery a
+		width: 100%
+	.about-us .about-us-info
+		padding: 60px 0
+	
+	.about-slider .bx-controls-direction
+		.bx-next
+			right: 5px
+		.bx-prev
+			left: 5px
 
+	.price .trainer .bloquote blockquote:after
+		position: relative
+		bottom: 0
+		right: 0
+		padding-left: 10px
+
+
+
+	.footer 
+		.top-footer
+			text-align: center
+			padding: 50px 0
+			.footer-about
+				float: none
+				max-width: 100%
+				p
+					max-width: 100%
+				.social-icon
+					padding-bottom: 30px
+			.footer-contact
+				padding-top: 40px
+				min-width: 100%
+				ul
+					li
+						padding-bottom: 5px
+						padding-left: 0
+						div
+							display: inline-block
+							padding: 0 5px
+					li:before
+						position: relative
+						display: inline-block
+						padding-right: 15px
+@media only screen and (max-width : 767px)
+	/**/
 @media only screen and (max-width : 560px)
 	/**/
 	main .yoga .slider-info
@@ -120,6 +214,13 @@
 	/**/
 	.features .features-block .feature-item
 			max-width: 100%
+	.price .price-info .price-item
+		width: 100%
+		max-width: 320px
+		ul
+			padding: 45px 0 45px 35px
+			.line:after
+				right: 40%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -136,7 +237,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
 	/**/
-
+	
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
@@ -152,7 +253,11 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
-
+	.about-slider .bx-controls-direction
+		.bx-next
+			right: -25px
+		.bx-prev
+			left: -25px
 
 
 	

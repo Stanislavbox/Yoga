@@ -33,23 +33,26 @@
 			<div class="slider-info clearfix">
 				<div class="slider-form">
 					<div class="slider-padding clearfix">
-						<form class=>
+						<form name='yoga_form' method="post"  onsubmit="return validate_form ( );">
 							<div class="text-form">
 								Trial Class
 							</div>
 
-							<input id="name" name="name" type="text" placeholder="Enter your name" autofocus required="">
+							<input id="name" name="name" type="text" placeholder="Enter your name" autofocus pattern="[a-zA-Zа-яА-ЯёЁ ]+" required>
 					
-							<input id="phone" name="phone" type="tel" placeholder="Enter your phone" required="" pattern="\+8\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+							<input id="phone" name="phone" type="tel" placeholder="Enter your phone"  pattern="\+8\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
 
-							<select name="" id="" placeholder="Chose your class">
-								<option value="">Yoga For Health</option>
-								<option value="">Yoga For Lose Weight</option>
-								<option value="">Yoga For Children</option>
-								<option value="">Yoga For Elderly</option>
+							<select name="yoga_class">
+								<option value="Chose your class">Chose your class</option>
+								<option value="Yoga For Health">Yoga For Health</option>
+								<option value="Yoga For Lose Weight">Yoga For Lose Weight</option>
+								<option value="Yoga For Children">Yoga For Children</option>
+								<option value="Yoga For Elderly">Yoga For Elderly</option>
 							</select>
 
-							<div class="align-rigth"><button class="btn_form shadow">Try it</button></div>
+
+
+							<div class="align-rigth"><button type="submit" class="btn_form shadow">Try it</button></div>
 
 						</form>
 					</div>
@@ -220,7 +223,7 @@
 						<li class="line">ENTRY TIME: 8A.M – 8P.M</li>
 						<li>NUTRITION ADVICER: NO</li>
 					</ul>
-					<button>Buy now</button>
+					<button class="btn_price">Buy now</button>
 				</div>
 				<div class="price-item middle">
 					<div class="item-head">
@@ -231,7 +234,7 @@
 						<li class="line">ENTRY TIME: 8A.M – 8P.M</li>
 						<li>NUTRITION ADVICER: YES</li>
 					</ul>
-					<button>Buy now</button>
+					<button class="btn_price">Buy now</button>
 				</div>
 				<div class="price-item">
 					<div class="item-head">
@@ -242,17 +245,17 @@
 						<li class="line">ENTRY TIME: 8A.M – 8P.M</li>
 						<li>NUTRITION ADVICER: YES</li>
 					</ul>
-					<button>Buy now</button>
+					<button class="btn_price">Buy now</button>
 				</div>
 			</div>
-			<div class="trainer-slider" id="blog">
+			<div class="trainer-slider clearfix" id="blog">
 				<div class="trainer clearfix">
 					<div class="photo">
 						<img src="img/photo-1.jpg" alt="">
 					</div>
 					<div class="bloquote">
 						<blockquote>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi 
 						</blockquote>
 						<div class="title">
 							<p>Trainer</p>
@@ -298,7 +301,7 @@
 					</div>
 					<div class="bloquote">
 						<blockquote>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
 						</blockquote>
 						<div class="title">
 							<p>Trainer</p>
@@ -321,7 +324,7 @@
 					</div>
 					<div class="bloquote">
 						<blockquote>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.minim veniam, quis nostrud exercitatio
 						</blockquote>
 						<div class="title">
 							<p>Trainer</p>
@@ -357,7 +360,17 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer-contact"></div>
+				<div class="footer-contact">
+					<h4>CONTACT US</h4>
+					<ul>
+						<li class="adres">5419 Joseph Mountains Apt. 716</li>
+						<li class="phone-number"><div><a href="tel:+123456789"> +1 234 567 89 </a></div><div><a href="tel:+123467890">+1 234 678 90</a></div> </li>
+					</ul>
+					<ul>
+						<li class="mail"><a href="mailto:joga.info@example.com">joga.info@example.com</a></li>
+						<li class='site'>www.example.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="bottom-footer">
@@ -372,6 +385,7 @@
 	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='js/validate.js'></script>
 	<script src='js/libs.min.js'></script>
 	<script src='js/jquery.slicknav.min.js'></script>
 	<script src='js/jquery.bxslider.min.js'></script>

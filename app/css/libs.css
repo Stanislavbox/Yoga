@@ -3329,16 +3329,13 @@ ul.bxslider {
 .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
-  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding-bottom: 40px;
 }
 
 /** THEME
 ===================================*/
 .bx-wrapper {
-  background: #fff;
+  background: none;
 }
 
 .bx-wrapper .bx-pager,
@@ -3369,8 +3366,8 @@ ul.bxslider {
   font-weight: bold;
   color: #666;
   position: absolute;
-  bottom: 50%;
-  right: -100px;
+  bottom: 55%;
+  right: -120px;
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
@@ -3409,10 +3406,14 @@ ul.bxslider {
   line-height: 0;
   width: 18px;
   height: 18px;
-  border: 2px solid #5d6ced;
+  border: 2px solid #d7d7d7;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   margin-left: 18px;
+}
+
+.bx-wrapper .bx-pager-item:hover {
+  border: 2px solid #5b6ceb;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */

@@ -23,13 +23,12 @@ ul.bxslider {
 .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
-  border-radius: 8px;
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15); 
+  padding-bottom: 40px
 }
 /** THEME
 ===================================*/
 .bx-wrapper {
-  background: #fff;
+  background: none
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
@@ -57,8 +56,8 @@ ul.bxslider {
     font-weight: bold;
     color: #666;
     position: absolute;
-    bottom: 50%;
-    right: -100px;
+    bottom: 55%;
+    right: -120px;
     transform-origin: center;
     transform: rotate(90deg);
 
@@ -77,6 +76,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
   background: #5b6ceb;
+
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -90,10 +90,14 @@ ul.bxslider {
   line-height: 0;
   width: 18px;
   height: 18px;
-  border: 2px solid #5d6ced;
+  border: 2px solid #d7d7d7;
   border-radius: 50%;
   margin-left: 18px;
 }
+.bx-wrapper .bx-pager-item:hover{
+  border: 2px solid #5b6ceb;
+}
+
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: -25px;
